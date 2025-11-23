@@ -1,6 +1,7 @@
 ---
+layout: portfolio-single
 title: "Chatbot - Reinforcement Learning"
-excerpt: "Built a reinforcement learning framework for simulated conversations, combining SEQ2SEQ models with RL to deliver more context-aware responses."
+excerpt: "RL framework for conversational AI"
 icon: "fas fa-robot"
 ---
 
