@@ -116,3 +116,75 @@
         clear: left;
     }
 }
+
+/* Portfolio Single Page Styling */
+.portfolio-header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #444c56;
+    padding-bottom: 1rem;
+}
+
+.portfolio-header .page__title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #58a6ff;
+}
+
+.portfolio-header .page__lead {
+    font-size: 1.25rem;
+    color: #adbac7;
+}
+
+.gallery-title {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #444c56;
+    padding-bottom: 0.5rem;
+    color: #58a6ff;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-item {
+    margin: 0;
+    background: #2d333b;
+    border: 1px solid #444c56;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-3px);
+    border-color: #58a6ff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item figcaption {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #adbac7;
+    background: #22272e;
+}
+
+.project-links {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.btn--large {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+}
