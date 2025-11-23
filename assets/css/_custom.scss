@@ -1,43 +1,56 @@
-/* Custom Card Styling */
+/* Custom Card Styling - Dark Theme */
 .archive__card {
-    background: #fff;
-    border: 1px solid #eee;
+    background: #2d333b;
+    /* Dark card background */
+    border: 1px solid #444c56;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     height: 100%;
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .archive__card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    border-color: #58a6ff;
+    /* Highlight border on hover */
 }
 
 .archive__card-header {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    /* Formal Dark Gradient: Deep Slate to Muted Blue */
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     padding: 2rem;
     text-align: center;
-    color: white;
+    color: #ffffff;
     min-height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .archive__card-header .archive__item-title {
     margin: 0;
     font-size: 1.2rem;
-    color: white;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .archive__card-header .archive__item-title a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
+}
+
+.archive__card-header i {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .archive__card-body {
@@ -45,35 +58,44 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    color: #adbac7;
+    /* Muted text for dark mode */
 }
 
 .archive__item-subtitle {
     font-size: 1.1em;
     margin-bottom: 0.5em;
-    color: #333;
+    color: #e6edf3;
+    /* Brighter text for subtitles */
+    font-weight: 600;
 }
 
 .archive__item-excerpt {
-    font-size: 0.9em;
-    color: #666;
+    font-size: 0.95em;
+    color: #adbac7;
     flex-grow: 1;
     margin-bottom: 1.5rem;
+    line-height: 1.6;
 }
 
 .btn--danger {
-    background-color: #ff6b6b;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    background-color: transparent;
+    color: #58a6ff;
+    border: 1px solid #58a6ff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
     text-align: center;
     text-decoration: none;
     align-self: flex-start;
     width: 100%;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
 .btn--danger:hover {
-    background-color: #ff5252;
+    background-color: #58a6ff;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /* Grid Layout Overrides */
