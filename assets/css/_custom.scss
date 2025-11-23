@@ -1,0 +1,96 @@
+/* Custom Card Styling */
+.archive__card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.archive__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.archive__card-header {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.archive__card-header .archive__item-title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.archive__card-header .archive__item-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.archive__card-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.archive__item-subtitle {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.archive__item-excerpt {
+    font-size: 0.9em;
+    color: #666;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.btn--danger {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.btn--danger:hover {
+    background-color: #ff5252;
+}
+
+/* Grid Layout Overrides */
+.grid__item {
+    margin-bottom: 2em;
+}
+
+@media (min-width: 64em) {
+    .grid__item {
+        width: 33.33333%;
+        float: left;
+        padding-right: 1em;
+        /* Add spacing between columns */
+    }
+
+    /* Clearfix for every 3rd item */
+    .grid__item:nth-child(3n+1) {
+        clear: left;
+    }
+}

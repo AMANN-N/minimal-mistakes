@@ -1,0 +1,19 @@
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="archive__card">
+      <div class="archive__card-header">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+        </h2>
+        {% if post.icon %}
+          <i class="{{ post.icon }}"></i>
+        {% endif %}
+      </div>
+      <div class="archive__card-body">
+        <h3 class="archive__item-subtitle">{{ post.title }}</h3>
+        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>
+        <a href="{{ post.url | relative_url }}" class="btn btn--danger">Explore Project</a>
+      </div>
+    </div>
+  </article>
+</div>

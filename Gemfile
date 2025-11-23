@@ -1,2 +1,5 @@
 source "https://rubygems.org"
 gemspec
+
+gem "jekyll-sass-converter"
+gem "webrick"

@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "Aman Raj Singh"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+subtitle                 : "ML Engineer | BITS Pilani Graduate"
+name                     : "Aman Raj Singh"
+description              : "Portfolio of Aman Raj Singh - ML Engineer"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,30 +113,24 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Aman Raj Singh"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "ML Engineer at OfBusiness. Dual Degree graduate from BITS Pilani (EEE + Biological Sciences)."
+  location         : "Gurugram, India"
+  email            : "iamann579@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "mailto:iamann579@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/AMANN-N"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/AmanRajSingh"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=AmanRajSingh"
 
 # Site Footer
 footer:
@@ -166,6 +160,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - assets
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -221,10 +216,7 @@ kramdown:
   enable_coderay: false
 
 
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
 
 
 # Outputting
@@ -265,6 +257,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-sass-converter
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -324,4 +317,16 @@ defaults:
       read_time: true
       comments: # true
       share: true
+      share: true
       related: true
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  experience:
+    output: true
+    permalink: /:collection/:path/
+  implementations:
+    output: true
+    permalink: /:collection/:path/
