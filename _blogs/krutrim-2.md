@@ -11,7 +11,7 @@ notion_url: "https://gray-hickory-f32.notion.site/KRUTRIM-2-19dbf6d1361580e586a6
 **Platform:** Notion  
 
 ## Overview
-Exploration of KRUTRIM 2, India's indigenous large language model, covering its development, capabilities, and significance.
+Exploration of KRUTRIM 2, India's indigenous large language model, covering its development, ßcapabilities, and significance.
 
 ## Topics Covered
 - KRUTRIM 2 architecture and features

@@ -1,0 +1,219 @@
+/* Skills Graph Container */
+.skills-graph-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.skills-graph-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skills-graph-header h1 {
+    font-size: 2.5rem;
+    color: #58a6ff;
+    margin-bottom: 0.5rem;
+}
+
+.skills-graph-header p {
+    font-size: 1.1rem;
+    color: #adbac7;
+}
+
+/* Graph SVG Container */
+#skills-graph {
+    width: 100%;
+    height: 700px;
+    background: #22272e;
+    border-radius: 12px;
+    border: 2px solid #444c56;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Graph Legend */
+.graph-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: #adbac7;
+}
+
+.legend-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.legend-dot.skill {
+    background: #58a6ff;
+}
+
+.legend-dot.project {
+    background: #3fb950;
+}
+
+.legend-dot.experience {
+    background: #f78166;
+}
+
+.legend-dot.implementation {
+    background: #bc8cff;
+}
+
+/* Graph Nodes */
+.node {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.node:hover {
+    filter: brightness(1.3);
+}
+
+.node circle {
+    stroke: #2d333b;
+    stroke-width: 2px;
+}
+
+.node.skill circle {
+    fill: #58a6ff;
+}
+
+.node.project circle {
+    fill: #3fb950;
+}
+
+.node.experience circle {
+    fill: #f78166;
+}
+
+.node.implementation circle {
+    fill: #bc8cff;
+}
+
+.node text {
+    font-size: 11px;
+    fill: #e6edf3;
+    text-anchor: middle;
+    pointer-events: none;
+    font-weight: 500;
+}
+
+/* Graph Links */
+.link {
+    stroke: #444c56;
+    stroke-opacity: 0.6;
+    stroke-width: 1.5px;
+    transition: all 0.3s ease;
+}
+
+.link.active {
+    stroke: #58a6ff;
+    stroke-opacity: 1;
+    stroke-width: 2.5px;
+}
+
+/* Tooltip */
+.graph-tooltip {
+    position: absolute;
+    background: #2d333b;
+    border: 1px solid #58a6ff;
+    border-radius: 6px;
+    padding: 0.75rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+    max-width: 250px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.graph-tooltip.show {
+    opacity: 1;
+}
+
+.graph-tooltip h4 {
+    margin: 0 0 0.5rem 0;
+    color: #58a6ff;
+    font-size: 0.95rem;
+}
+
+.graph-tooltip p {
+    margin: 0;
+    color: #adbac7;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.graph-tooltip .tooltip-type {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.tooltip-type.skill {
+    background: #58a6ff;
+    color: #0d1117;
+}
+
+.tooltip-type.project {
+    background: #3fb950;
+    color: #0d1117;
+}
+
+.tooltip-type.experience {
+    background: #f78166;
+    color: #0d1117;
+}
+
+.tooltip-type.implementation {
+    background: #bc8cff;
+    color: #0d1117;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #skills-graph {
+        height: 500px;
+    }
+
+    .skills-graph-header h1 {
+        font-size: 2rem;
+    }
+
+    .graph-legend {
+        gap: 1rem;
+    }
+}
+
+/* Pulse Animation for Skill Nodes */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+}
+

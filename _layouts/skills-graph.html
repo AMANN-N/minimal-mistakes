@@ -1,0 +1,37 @@
+---
+layout: default
+author_profile: true
+---
+
+<div class="skills-graph-container">
+    <div class="skills-graph-header">
+        <h1>Skills & Portfolio Network</h1>
+        <p>Interactive visualization of my skills and how they connect to projects, work experience, and implementations
+        </p>
+    </div>
+
+    <div id="skills-graph"></div>
+
+    <div class="graph-legend">
+        <div class="legend-item">
+            <span class="legend-dot skill"></span>
+            <span>Skills</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-dot project"></span>
+            <span>Projects</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-dot experience"></span>
+            <span>Work Experience</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-dot implementation"></span>
+            <span>Implementations</span>
+        </div>
+    </div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<link rel="stylesheet" href="{{ '/assets/css/skills-graph.css' | relative_url }}">
+<script src="{{ '/assets/js/skills-graph.js' | relative_url }}"></script>
