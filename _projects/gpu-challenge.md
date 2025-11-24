@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: "100 Days of GPU (CUDA) Challenge"
-excerpt: "CUDA kernels and optimizations for GPU architecture and kernel tuning."
+excerpt: ""
 icon: "fas fa-microchip"
 description: "A deep dive into GPU architecture and high-performance computing through 100 days of coding."
 header:

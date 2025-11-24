@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: "NLP Chatbot Platform"
-excerpt: "Intelligent conversational AI platform with multi-language support and context awareness."
+excerpt: ""
 icon: "fas fa-comments"
 description: "Enterprise-grade chatbot with advanced NLP capabilities"
 header:

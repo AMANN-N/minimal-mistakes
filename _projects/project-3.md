@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: "Computer Vision App"
-excerpt: "Real-time object detection and tracking system using YOLOv8 and DeepSORT."
+excerpt: ""
 icon: "fas fa-camera"
 description: "Advanced computer vision for surveillance and analytics"
 header:

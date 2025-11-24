@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: "Machine Learning Pipeline"
-excerpt: "Production ML pipeline with monitoring and A/B testing."
+excerpt: ""
 icon: "fas fa-cogs"
 description: "Scalable ML infrastructure for real-time predictions"
 header:

@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: "Chatbot - Reinforcement Learning"
-excerpt: "RL framework for conversational AI"
+excerpt: ""
 icon: "fas fa-robot"
 ---
 
