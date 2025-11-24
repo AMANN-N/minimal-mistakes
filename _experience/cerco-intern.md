@@ -1,4 +1,5 @@
 ---
+layout: portfolio-single
 title: "Intern at CerCo (France)"
 excerpt: "Built advanced speech recognition models in PyTorch, applying sub-sampling and dilated convolutions to boost accuracy."
 icon: "fas fa-brain"
