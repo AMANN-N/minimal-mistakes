@@ -5,6 +5,7 @@ excerpt: "Implementation of Mixture of Experts architecture for conditional comp
 icon: "fas fa-users-cog"
 image: "/assets/img/implementations/moe-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/MOE"
+category: "advanced"
 ---
 
 **Type:** Advanced Neural Architecture  

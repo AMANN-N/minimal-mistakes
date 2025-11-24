@@ -5,6 +5,7 @@ excerpt: "Implementation of Linear Regression using gradient descent and normal 
 icon: "fas fa-chart-line"
 image: "/assets/img/implementations/linear-regression-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/Linear%20Regression%20Scratch"
+category: "ml-algorithms"
 ---
 
 **Type:** Machine Learning Algorithm  

@@ -330,3 +330,6 @@ collections:
   implementations:
     output: true
     permalink: /:collection/:path/
+  blogs:
+    output: true
+    permalink: /:collection/:path/

@@ -5,6 +5,7 @@ excerpt: "PyTorch implementation of Word2Vec for learning distributed representa
 icon: "fas fa-language"
 image: "/assets/img/implementations/word2vec-cover.png"
 github: "https://github.com/AMANN-N/ml-playground"
+category: "deep-learning"
 ---
 
 **Type:** Paper Implementation  

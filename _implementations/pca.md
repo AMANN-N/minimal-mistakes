@@ -5,6 +5,7 @@ excerpt: "Implementation of Principal Component Analysis from scratch for dimens
 icon: "fas fa-compress"
 image: "/assets/img/implementations/pca-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/PCA"
+category: "ml-algorithms"
 ---
 
 **Type:** Dimensionality Reduction Algorithm  

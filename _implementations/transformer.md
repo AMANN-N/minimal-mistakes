@@ -5,6 +5,7 @@ excerpt: "Implementation of the groundbreaking Transformer architecture from the
 icon: "fas fa-brain"
 image: "/assets/img/implementations/transformer-cover.png"
 github: "https://github.com/AMANN-N/ml-playground"
+category: "deep-learning"
 ---
 
 **Type:** Paper Implementation  

@@ -5,6 +5,7 @@ excerpt: "Implementation of K-Means clustering algorithm from scratch for unsupe
 icon: "fas fa-project-diagram"
 image: "/assets/img/implementations/kmeans-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/K%20Means%20Clustering"
+category: "ml-algorithms"
 ---
 
 **Type:** Machine Learning Algorithm  

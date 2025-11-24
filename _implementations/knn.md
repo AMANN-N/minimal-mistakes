@@ -5,6 +5,7 @@ excerpt: "Implementation of K-Nearest Neighbors algorithm from scratch for class
 icon: "fas fa-sitemap"
 image: "/assets/img/implementations/knn-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/K%20Nearest%20Neighbour%20Scratch"
+category: "ml-algorithms"
 ---
 
 **Type:** Machine Learning Algorithm  

@@ -5,6 +5,7 @@ excerpt: "Lightweight chatbot implementation using transformer-based architectur
 icon: "fas fa-comments"
 image: "/assets/img/implementations/nanochat-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/Nanochat"
+category: "advanced"
 ---
 
 **Type:** Conversational AI Project  

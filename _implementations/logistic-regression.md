@@ -5,6 +5,7 @@ excerpt: "Implementation of Logistic Regression using gradient descent for binar
 icon: "fas fa-chart-area"
 image: "/assets/img/implementations/logistic-regression-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/Logistic%20Regression%20Scratch"
+category: "ml-algorithms"
 ---
 
 **Type:** Machine Learning Algorithm  

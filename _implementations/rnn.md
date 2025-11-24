@@ -5,6 +5,7 @@ excerpt: "Implementation of Recurrent Neural Networks from scratch for sequence 
 icon: "fas fa-sync-alt"
 image: "/assets/img/implementations/rnn-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/RNN"
+category: "deep-learning"
 ---
 
 **Type:** Sequential Deep Learning  

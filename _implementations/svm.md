@@ -5,6 +5,7 @@ excerpt: "Implementation of Linear Support Vector Machine from scratch for binar
 icon: "fas fa-divide"
 image: "/assets/img/implementations/svm-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/Linear%20SVM"
+category: "ml-algorithms"
 ---
 
 **Type:** Machine Learning Algorithm  

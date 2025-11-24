@@ -5,6 +5,7 @@ excerpt: "Implementation of a multi-layer deep neural network from scratch with 
 icon: "fas fa-network-wired"
 image: "/assets/img/implementations/dnn-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/Naive%20Deep%20Neural%20Network"
+category: "deep-learning"
 ---
 
 **Type:** Deep Learning Fundamentals  

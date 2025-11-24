@@ -5,6 +5,7 @@ excerpt: "Implementation of Flash Attention for fast and memory-efficient attent
 icon: "fas fa-bolt"
 image: "/assets/img/implementations/flash-attention-cover.png"
 github: "https://github.com/AMANN-N/ml-playground"
+category: "deep-learning"
 ---
 
 **Type:** Algorithm Implementation  

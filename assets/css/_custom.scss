@@ -301,3 +301,18 @@ body:has(.archive-modal.is-open) .masthead {
 .archive-modal__links .btn {
     margin-top: 1rem;
 }
+
+/* Category Section Headers */
+.archive__subtitle {
+    font-size: 1.5rem;
+    color: #58a6ff;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #444c56;
+    font-weight: 600;
+}
+
+.archive__subtitle:first-of-type {
+    margin-top: 0;
+}

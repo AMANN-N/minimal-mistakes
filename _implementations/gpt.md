@@ -5,6 +5,7 @@ excerpt: "PyTorch implementation of OpenAI's original GPT model for generative l
 icon: "fas fa-robot"
 image: "/assets/img/implementations/gpt-cover.png"
 github: "https://github.com/AMANN-N/ml-playground"
+category: "advanced"
 ---
 
 **Type:** Model Implementation  

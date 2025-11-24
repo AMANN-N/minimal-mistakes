@@ -5,6 +5,7 @@ excerpt: "PyTorch implementation of GPT-2 with 124 million parameters for advanc
 icon: "fas fa-brain"
 image: "/assets/img/implementations/gpt2-cover.png"
 github: "https://github.com/AMANN-N/ml-playground"
+category: "advanced"
 ---
 
 **Type:** Large-Scale Model Implementation  

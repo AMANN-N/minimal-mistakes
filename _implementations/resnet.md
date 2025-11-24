@@ -5,6 +5,7 @@ excerpt: "Implementation of ResNet architecture with skip connections for traini
 icon: "fas fa-layer-group"
 image: "/assets/img/implementations/resnet-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/RESNet"
+category: "deep-learning"
 ---
 
 **Type:** Deep Learning Architecture  

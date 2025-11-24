@@ -5,6 +5,7 @@ excerpt: "Implementation of LoRA (Low-Rank Adaptation) for efficient fine-tuning
 icon: "fas fa-compress-alt"
 image: "/assets/img/implementations/lora-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/LoRA"
+category: "advanced"
 ---
 
 **Type:** Parameter-Efficient Fine-Tuning  

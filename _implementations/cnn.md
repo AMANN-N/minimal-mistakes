@@ -5,6 +5,7 @@ excerpt: "Implementation of Convolutional Neural Networks from scratch for image
 icon: "fas fa-image"
 image: "/assets/img/implementations/cnn-cover.png"
 github: "https://github.com/AMANN-N/ml-playground/tree/main/CNN"
+category: "deep-learning"
 ---
 
 **Type:** Deep Learning Implementation  
