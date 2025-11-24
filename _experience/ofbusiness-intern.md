@@ -1,15 +1,15 @@
 ---
 layout: portfolio-single
-title: "ML Engineer at OfBusiness"
+title: "SDE at OfBusiness"
 excerpt: "Built NLP models, sector classification systems, and predictive analytics pipelines at OFB-Nexizo."
 icon: "fas fa-briefcase"
 image: "/assets/img/portfolio/kreiman-cover.png"
 github: ""
 ---
 
-**Role:** ML Engineer  
+**Role:** SDE Intern  
 **Company:** OfBusiness (OFB Tech Pvt Ltd) | Gurugram, India  
-**Dates:** Jan 2024 - Present
+**Dates:** Jan 2024 - Dec 2024
 
 ## Responsibilities
 *   Built NLP models, sector classification systems, and predictive analytics pipelines at OFB-Nexizo, improving business insight accuracy, accelerating automated content creation through image generation and cutting manual effort by 40%.
