@@ -1,0 +1,32 @@
+{% comment %}
+Modal markup for a portfolio item. Expected variable: post (the collection item).
+{% endcomment %}
+<div id="modal-{{ post.slug }}" class="archive-modal" aria-hidden="true">
+    <div class="archive-modal__content">
+        <button class="archive-modal__close" aria-label="Close modal">&times;</button>
+
+        {% if post.image %}
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="archive-modal__image">
+        {% endif %}
+
+        <h2 class="archive-modal__title">{{ post.title }}</h2>
+
+        {% if post.subtitle %}
+        <h3 class="archive-modal__subtitle">{{ post.subtitle }}</h3>
+        {% endif %}
+
+        {% if post.excerpt %}
+        <p class="archive-modal__excerpt">{{ post.excerpt }}</p>
+        {% endif %}
+
+        {{ post.content | markdownify }}
+
+        {% if post.github %}
+        <p class="archive-modal__links">
+            <a href="{{ post.github }}" target="_blank" rel="noopener" class="btn btn--primary">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </p>
+        {% endif %}
+    </div>
+</div>

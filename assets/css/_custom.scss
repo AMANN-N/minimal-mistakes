@@ -222,3 +222,82 @@
     padding: 0.75rem 2rem;
     font-size: 1.1rem;
 }
+
+/* ---------- Modal Overlay Styles ---------- */
+.archive-modal {
+    display: none;
+    /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    /* Extremely high to cover everything */
+    overflow-y: auto;
+}
+
+.archive-modal.is-open {
+    display: flex;
+}
+
+/* Hide masthead when modal is open */
+body:has(.archive-modal.is-open) .masthead {
+    z-index: -1 !important;
+    opacity: 0;
+}
+
+.archive-modal__content {
+    background: #2d333b;
+    /* match card background */
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 1.5rem;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.archive-modal__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.archive-modal__image {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.archive-modal__title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.archive-modal__subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: #c9d1d9;
+}
+
+.archive-modal__excerpt {
+    font-size: 0.95rem;
+    color: #adbac7;
+    margin-bottom: 1rem;
+}
+
+.archive-modal__links .btn {
+    margin-top: 1rem;
+}

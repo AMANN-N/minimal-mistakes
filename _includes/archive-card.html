@@ -1,17 +1,18 @@
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <div class="archive__card">
+    <div class="archive__card" data-modal="modal-{{ post.slug }}">
       <div class="archive__card-header">
         {% if post.icon %}
         <i class="{{ post.icon }}"></i>
         {% endif %}
         <h2 class="archive__item-title no_toc" itemprop="headline">
-          <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+          {{ post.title }}
         </h2>
       </div>
       <div class="archive__card-body">
-        <a href="{{ post.url | relative_url }}" class="btn btn--danger">Explore Project</a>
+        <span class="btn btn--danger">Explore</span>
       </div>
     </div>
+    {% include archive-modal.html post=post %}
   </article>
 </div>
