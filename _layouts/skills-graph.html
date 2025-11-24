@@ -3,37 +3,76 @@ layout: default
 author_profile: true
 ---
 
-<div class="skills-graph-container">
-    <div class="skills-graph-header">
-        <h1>Skills & Portfolio Network</h1>
-        <p>Interactive visualization of my skills and how they connect to projects, work experience, and implementations
-        </p>
+<div class="homepage-container">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Hello! Are you hiring? <span class="wave">👋</span></h1>
+            <p class="hero-subtitle">Explore my interactive resume tailored for your role, or visualize my skills
+                network.</p>
+
+            <div class="view-toggle-container">
+                <button class="view-toggle-btn active" onclick="switchView('resume')">
+                    <i class="fas fa-file-alt"></i> Interactive Resume
+                </button>
+                <button class="view-toggle-btn" onclick="switchView('graph')">
+                    <i class="fas fa-project-diagram"></i> Skills Graph
+                </button>
+            </div>
+        </div>
     </div>
 
-    <div id="skills-graph"></div>
+    <!-- Main Content Area -->
+    <div class="main-content-area">
+        <!-- View 1: Interactive Resume (Default) -->
+        <div id="view-resume" class="view-section active">
+            {% include resume-viewer.html %}
+        </div>
 
-    <div class="graph-legend">
-        <div class="legend-item">
-            <span class="legend-dot skill"></span>
-            <span>Skills</span>
-        </div>
-        <div class="legend-item">
-            <span class="legend-dot project"></span>
-            <span>Projects</span>
-        </div>
-        <div class="legend-item">
-            <span class="legend-dot experience"></span>
-            <span>Work Experience</span>
-        </div>
-        <div class="legend-item">
-            <span class="legend-dot implementation"></span>
-            <span>Implementations</span>
+        <!-- View 2: Skills Graph (Hidden by default) -->
+        <div id="view-graph" class="view-section" style="display: none;">
+            <div class="skills-graph-container">
+                <div id="skills-graph"></div>
+                <div class="graph-legend">
+                    <div class="legend-item">
+                        <span class="legend-dot skill"></span>
+                        <span>Skills</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot project"></span>
+                        <span>Projects</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot experience"></span>
+                        <span>Work Experience</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot implementation"></span>
+                        <span>Implementations</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- Interactive AI Resume Viewer -->
-{% include resume-viewer.html %}
+<script>
+    function switchView(viewName) {
+        // Update Buttons
+        document.querySelectorAll('.view-toggle-btn').forEach(btn => btn.classList.remove('active'));
+        event.currentTarget.classList.add('active');
+
+        // Update Views
+        document.getElementById('view-resume').style.display = viewName === 'resume' ? 'block' : 'none';
+        document.getElementById('view-graph').style.display = viewName === 'graph' ? 'block' : 'none';
+
+        // Trigger resize for graph if needed
+        if (viewName === 'graph') {
+            window.dispatchEvent(new Event('resize'));
+        }
+    }
+</script>
+
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <link rel="stylesheet" href="{{ '/assets/css/skills-graph.css' | relative_url }}">

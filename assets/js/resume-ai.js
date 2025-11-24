@@ -27,15 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Modal Functions
-function openResumeModal() {
-  document.getElementById('resume-modal').classList.add('active');
-  // Reset if needed, or keep previous state
-  if (!baseResumeData) loadResumeData();
-}
-
-function closeResumeModal() {
-  document.getElementById('resume-modal').classList.remove('active');
-}
+// Modal functions removed: inline resume view does not use a modal.
+// openResumeModal and closeResumeModal are no longer needed.
 
 // Skill Selection Functions
 document.addEventListener('click', (e) => {
@@ -536,9 +529,4 @@ function downloadResumePDF() {
 }
 
 // Close modal when clicking outside
-window.onclick = function (event) {
-  const modal = document.getElementById('resume-modal');
-  if (event.target === modal) {
-    closeResumeModal();
-  }
-}
+// Modal click handler removed; inline resume view does not use a modal overlay.
