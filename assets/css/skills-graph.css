@@ -25,7 +25,7 @@
 /* Graph SVG Container */
 #skills-graph {
     width: 100%;
-    height: 700px;
+    height: 500px;
     background: #22272e;
     border-radius: 12px;
     border: 2px solid #444c56;
@@ -216,4 +216,3 @@
         opacity: 0.9;
     }
 }
-

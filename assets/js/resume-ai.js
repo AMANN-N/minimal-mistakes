@@ -281,14 +281,20 @@ function generateResumeHTML(resumeData) {
 }
 
 // Display Resume with Typewriter Effect
+// Display Resume with Typewriter Effect
 async function displayResumeWithTypewriter(resumeData) {
   const container = document.getElementById('resume-content');
 
-  // Clear container but keep structure if possible? 
-  // For simplicity and effect, we'll rebuild it section by section
+  // 1. Fade out existing content
+  container.classList.add('fade-out');
+  await sleep(500); // Wait for fade out
 
-  // 1. Header (keep static usually, but let's re-render for consistency)
-  container.innerHTML = `
+  // 2. Clear and reset
+  container.innerHTML = '';
+  container.classList.remove('fade-out');
+
+  // 3. Render Header (Static/Fade-in)
+  const headerHTML = `
     <h1>${resumeData.name}</h1>
     <div class="resume-contact">
       <p><strong>${resumeData.title}</strong></p>
@@ -298,85 +304,128 @@ async function displayResumeWithTypewriter(resumeData) {
         <a href="${baseResumeData.personal.linkedin}" target="_blank">LinkedIn</a>
       </p>
     </div>
-    
-    <h2>Professional Summary</h2>
-    <p id="summary-text"></p>
-    
-    <h2>Experience</h2>
-    <div id="experience-section"></div>
-    
-    <h2>Projects</h2>
-    <div id="projects-section"></div>
-    
-    <h2>Skills</h2>
-    <div id="skills-section"></div>
-    
-    <h2>Education</h2>
-    <div id="education-section"></div>
   `;
+  const headerDiv = document.createElement('div');
+  headerDiv.innerHTML = headerHTML;
+  headerDiv.style.opacity = '0';
+  headerDiv.style.transition = 'opacity 0.5s';
+  container.appendChild(headerDiv);
 
-  // Animate summary
-  await typeText('summary-text', highlightSkills(resumeData.summary, selectedSkills));
+  // Trigger reflow for fade-in
+  headerDiv.offsetHeight;
+  headerDiv.style.opacity = '1';
+  await sleep(300);
 
-  // Animate experience
-  const expSection = document.getElementById('experience-section');
+  // 4. Summary Section
+  const summaryHeader = document.createElement('h2');
+  summaryHeader.textContent = 'Professional Summary';
+  container.appendChild(summaryHeader);
+
+  const summaryP = document.createElement('p');
+  summaryP.id = 'summary-text';
+  container.appendChild(summaryP);
+
+  await typeText(summaryP, highlightSkills(resumeData.summary, selectedSkills), 5); // Fast typing
+
+  // 5. Experience Section
+  const expHeader = document.createElement('h2');
+  expHeader.textContent = 'Experience';
+  container.appendChild(expHeader);
+
+  const expSection = document.createElement('div');
+  expSection.id = 'experience-section';
+  container.appendChild(expSection);
+
   for (const exp of resumeData.experience) {
-    const expHtml = `
-      <div class="experience-item">
-        <h3>${exp.position} - ${exp.company}</h3>
-        <p><em>${exp.duration}</em></p>
-        <ul>
-          ${exp.highlights.map(h => `<li>${highlightSkills(h, selectedSkills)}</li>`).join('')}
-        </ul>
-      </div>
-    `;
-    // Append and maybe animate opacity?
-    const div = document.createElement('div');
-    div.innerHTML = expHtml;
-    div.style.opacity = '0';
-    div.style.transition = 'opacity 0.5s';
-    expSection.appendChild(div);
+    const expItem = document.createElement('div');
+    expItem.className = 'experience-item';
+    expSection.appendChild(expItem);
 
-    // Trigger reflow
-    div.offsetHeight;
-    div.style.opacity = '1';
+    // Type Position/Company
+    const h3 = document.createElement('h3');
+    expItem.appendChild(h3);
+    await typeText(h3, `${exp.position} - ${exp.company}`, 10);
 
-    await sleep(400); // Wait a bit between items
+    // Duration
+    const p = document.createElement('p');
+    p.innerHTML = `<em>${exp.duration}</em>`;
+    expItem.appendChild(p);
+
+    // Bullets
+    const ul = document.createElement('ul');
+    expItem.appendChild(ul);
+
+    for (const highlight of exp.highlights) {
+      const li = document.createElement('li');
+      ul.appendChild(li);
+      await typeText(li, highlightSkills(highlight, selectedSkills), 2);
+    }
+
+    await sleep(200);
   }
 
-  // Animate projects
-  const projSection = document.getElementById('projects-section');
+  // 6. Projects Section
+  const projHeader = document.createElement('h2');
+  projHeader.textContent = 'Projects';
+  container.appendChild(projHeader);
+
+  const projSection = document.createElement('div');
+  projSection.id = 'projects-section';
+  container.appendChild(projSection);
+
   for (const proj of resumeData.projects.slice(0, 5)) {
-    const projHtml = `
-      <div class="project-item">
-        <h3>${proj.name}</h3>
-        <p>${highlightSkills(proj.description, selectedSkills)}</p>
-        <ul>
-          ${proj.highlights.map(h => `<li>${highlightSkills(h, selectedSkills)}</li>`).join('')}
-        </ul>
-      </div>
-    `;
-    const div = document.createElement('div');
-    div.innerHTML = projHtml;
-    div.style.opacity = '0';
-    div.style.transition = 'opacity 0.5s';
-    projSection.appendChild(div);
+    const projItem = document.createElement('div');
+    projItem.className = 'project-item';
+    projSection.appendChild(projItem);
 
-    div.offsetHeight;
-    div.style.opacity = '1';
+    const h3 = document.createElement('h3');
+    projItem.appendChild(h3);
+    await typeText(h3, proj.name, 10);
 
-    await sleep(400);
+    const p = document.createElement('p');
+    projItem.appendChild(p);
+    await typeText(p, highlightSkills(proj.description, selectedSkills), 2);
+
+    const ul = document.createElement('ul');
+    projItem.appendChild(ul);
+
+    for (const highlight of proj.highlights) {
+      const li = document.createElement('li');
+      ul.appendChild(li);
+      await typeText(li, highlightSkills(highlight, selectedSkills), 2);
+    }
+    await sleep(200);
   }
 
-  // Skills
-  document.getElementById('skills-section').innerHTML = `
-    <p>${resumeData.skills.map(s =>
-    selectedSkills.includes(s) ? `<span class="skill-highlight">${s}</span>` : s
-  ).join(' • ')}</p>
-  `;
+  // 7. Skills & Education (Fade in for speed)
+  const skillsHeader = document.createElement('h2');
+  skillsHeader.textContent = 'Skills';
+  container.appendChild(skillsHeader);
 
-  // Education
-  const eduSection = document.getElementById('education-section');
+  const skillsDiv = document.createElement('div');
+  skillsDiv.id = 'skills-section';
+
+  // Flatten skills if needed
+  let skillsList = [];
+  if (Array.isArray(resumeData.skills)) {
+    skillsList = resumeData.skills;
+  } else if (typeof resumeData.skills === 'object') {
+    Object.values(resumeData.skills).forEach(category => {
+      if (Array.isArray(category)) skillsList.push(...category);
+    });
+  }
+
+  skillsDiv.innerHTML = `<p>${skillsList.map(s =>
+    selectedSkills.includes(s) ? `<span class="skill-highlight">${s}</span>` : s
+  ).join(' • ')}</p>`;
+  container.appendChild(skillsDiv);
+
+  const eduHeader = document.createElement('h2');
+  eduHeader.textContent = 'Education';
+  container.appendChild(eduHeader);
+
+  const eduSection = document.createElement('div');
+  eduSection.id = 'education-section';
   resumeData.education.forEach(edu => {
     eduSection.innerHTML += `
       <div class="education-item">
@@ -385,37 +434,48 @@ async function displayResumeWithTypewriter(resumeData) {
       </div>
     `;
   });
+  container.appendChild(eduSection);
+
+  // Fade in bottom sections
+  skillsDiv.style.opacity = '0';
+  eduSection.style.opacity = '0';
+  skillsDiv.style.transition = 'opacity 0.5s';
+  eduSection.style.transition = 'opacity 0.5s';
+
+  skillsDiv.offsetHeight; // Reflow
+  skillsDiv.style.opacity = '1';
+  eduSection.style.opacity = '1';
 }
 
-// Typewriter effect
-async function typeText(elementId, text) {
-  const element = document.getElementById(elementId);
-  element.innerHTML = '';
+// Typewriter effect helper
+async function typeText(element, text, speed = 5) {
   element.classList.add('typewriter-cursor');
 
-  // Strip HTML tags for typing, then re-insert? 
-  // Typewriter with HTML is hard. 
-  // Simplified approach: Type text content, then swap with HTML if needed.
-  // Or just append characters.
+  // If text contains HTML tags (like highlight spans), we can't easily type char-by-char
+  // without breaking tags. Simple workaround: 
+  // 1. If it has tags, type the text content then replace with HTML?
+  // 2. Or just fade it in if it has tags to avoid complexity.
+  // 3. Or split by tags.
 
-  // For this demo, let's just type it out fast.
-  // If text contains HTML (span for highlight), we need to be careful.
-  // Hack: Just set innerHTML for now if it has tags, or type if plain.
-
+  // For robustness with highlights:
   if (text.includes('<')) {
-    // Has HTML, just fade in
+    // Has HTML (highlights), just fade in smoothly to avoid breaking markup
     element.innerHTML = text;
-    element.style.opacity = 0;
-    element.style.transition = 'opacity 1s';
+    element.style.opacity = '0';
+    element.style.transition = 'opacity 0.5s';
     element.offsetHeight;
-    element.style.opacity = 1;
-    await sleep(500);
+    element.style.opacity = '1';
+    await sleep(300);
   } else {
+    // Plain text, type it out
+    element.textContent = '';
     for (let i = 0; i < text.length; i++) {
       element.textContent += text[i];
-      await sleep(5); // Fast typing
+      // Randomize speed slightly for realism
+      await sleep(speed + Math.random() * 5);
     }
   }
+
   element.classList.remove('typewriter-cursor');
 }
 
