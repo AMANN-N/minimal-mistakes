@@ -1,0 +1,112 @@
+<!-- Interactive Resume Viewer Modal -->
+<script>
+    window.GEMINI_API_KEY = "{{ site.env.GEMINI_API_KEY }}";
+</script>
+<div id="resume-modal" class="resume-modal">
+    <div class="resume-modal-content">
+        <button class="resume-close" onclick="closeResumeModal()">&times;</button>
+
+        <div class="resume-layout">
+            <!-- Sidebar: Controls & Skills -->
+            <div class="resume-sidebar">
+                <div class="sidebar-header">
+                    <h2>🎯 Tailor Resume</h2>
+                    <p>Select up to 5 skills to rewrite my resume for your role.</p>
+                </div>
+
+                <div class="skill-selector-container">
+                    <!-- Programming -->
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <div class="skill-buttons">
+                            <button class="skill-btn" data-skill="Python">Python</button>
+                            <button class="skill-btn" data-skill="Java">Java</button>
+                            <button class="skill-btn" data-skill="C++">C++</button>
+                            <button class="skill-btn" data-skill="JavaScript">JavaScript</button>
+                        </div>
+                    </div>
+
+                    <!-- ML/DL -->
+                    <div class="skill-category">
+                        <h3>ML & Deep Learning</h3>
+                        <div class="skill-buttons">
+                            <button class="skill-btn" data-skill="Deep Learning">Deep Learning</button>
+                            <button class="skill-btn" data-skill="Machine Learning">Machine Learning</button>
+                            <button class="skill-btn" data-skill="NLP">NLP</button>
+                            <button class="skill-btn" data-skill="Computer Vision">Computer Vision</button>
+                            <button class="skill-btn" data-skill="Transformers">Transformers</button>
+                            <button class="skill-btn" data-skill="Generative AI">Generative AI</button>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-category">
+                        <h3>Frameworks</h3>
+                        <div class="skill-buttons">
+                            <button class="skill-btn" data-skill="PyTorch">PyTorch</button>
+                            <button class="skill-btn" data-skill="TensorFlow">TensorFlow</button>
+                            <button class="skill-btn" data-skill="Scikit-Learn">Scikit-Learn</button>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Data -->
+                    <div class="skill-category">
+                        <h3>Backend & Databases</h3>
+                        <div class="skill-buttons">
+                            <button class="skill-btn" data-skill="SQL">SQL</button>
+                            <button class="skill-btn" data-skill="MongoDB">MongoDB</button>
+                            <button class="skill-btn" data-skill="Redis">Redis</button>
+                            <button class="skill-btn" data-skill="REST API">REST API</button>
+                            <button class="skill-btn" data-skill="Spring Boot">Spring Boot</button>
+                        </div>
+                    </div>
+
+                    <!-- Performance -->
+                    <div class="skill-category">
+                        <h3>Performance & Optimization</h3>
+                        <div class="skill-buttons">
+                            <button class="skill-btn" data-skill="CUDA">CUDA</button>
+                            <button class="skill-btn" data-skill="Optimization">Optimization</button>
+                            <button class="skill-btn" data-skill="Parallel Computing">Parallel Computing</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-footer">
+                    <div class="selected-skills-summary">
+                        <span>Selected: <strong id="skill-count">0</strong>/5</span>
+                    </div>
+                    <button id="generate-resume-btn" class="btn-primary" disabled onclick="generateTailoredResume()">
+                        Rewrite Resume ✨
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Content: Resume Preview -->
+            <div class="resume-preview-area">
+                <div class="preview-header">
+                    <div class="status-bar" id="status-bar">Viewing Default Resume</div>
+                    <button class="btn-secondary btn-sm" onclick="downloadResumePDF()">
+                        <i class="fas fa-download"></i> PDF
+                    </button>
+                </div>
+
+                <div id="resume-content" class="resume-paper">
+                    <!-- Resume content will be rendered here immediately -->
+                    <div class="loading-spinner">Loading resume...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Button to open resume modal (add to homepage) -->
+<div class="resume-cta">
+    <button class="btn-resume-open" onclick="openResumeModal()">
+        <i class="fas fa-file-alt"></i> Interactive AI Resume
+    </button>
+</div>
+
+<script src="{{ '/assets/js/resume-ai.js' | relative_url }}"></script>
+<link rel="stylesheet" href="{{ '/assets/css/resume-viewer.css' | relative_url }}">

@@ -1,0 +1,470 @@
+{
+    "personal": {
+        "name": "Aman Singh",
+        "title": "Machine Learning Engineer",
+        "email": "your.email@example.com",
+        "location": "India",
+        "linkedin": "https://linkedin.com/in/yourprofile",
+        "github": "https://github.com/AMANN-N"
+    },
+    "summary": "Machine Learning Engineer with expertise in Deep Learning, NLP, Computer Vision, and Large Language Models. Experienced in building production ML systems, implementing state-of-the-art algorithms from scratch, and optimizing performance with CUDA and parallel computing.",
+    "experience": [
+        {
+            "company": "OfBusiness",
+            "position": "ML Engineer",
+            "duration": "Current",
+            "location": "India",
+            "highlights": [
+                "Developed and deployed NLP models for business intelligence",
+                "Built ML pipelines using PyTorch and TensorFlow",
+                "Implemented Generative AI solutions for automation",
+                "Worked with SQL, MongoDB, Redis, and Elasticsearch for data management",
+                "Designed REST APIs for ML model serving"
+            ],
+            "skills": [
+                "Python",
+                "PyTorch",
+                "TensorFlow",
+                "NLP",
+                "Deep Learning",
+                "SQL",
+                "MongoDB",
+                "Redis",
+                "Elasticsearch",
+                "REST API",
+                "Generative AI"
+            ]
+        },
+        {
+            "company": "Harvard Medical School",
+            "position": "Research Intern",
+            "duration": "2023",
+            "location": "Remote",
+            "highlights": [
+                "Conducted research on NLP and Deep Learning applications in medical domain",
+                "Implemented Transformer-based models for medical text analysis",
+                "Developed Generative AI solutions for healthcare applications",
+                "Performed data analysis on large medical datasets"
+            ],
+            "skills": [
+                "Python",
+                "NLP",
+                "Deep Learning",
+                "Transformers",
+                "Generative AI",
+                "Data Analysis"
+            ]
+        },
+        {
+            "company": "CerCo",
+            "position": "ML Intern",
+            "duration": "2022",
+            "location": "India",
+            "highlights": [
+                "Built NLP models using PyTorch",
+                "Implemented Transformer architectures for text processing",
+                "Developed Deep Learning solutions for business problems"
+            ],
+            "skills": [
+                "Python",
+                "PyTorch",
+                "NLP",
+                "Transformers",
+                "Deep Learning"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "CUDA GPU Challenge - 100 Days",
+            "description": "Intensive 100-day challenge focusing on GPU programming and CUDA optimization",
+            "highlights": [
+                "Implemented parallel computing algorithms in CUDA",
+                "Optimized GPU kernels for maximum performance",
+                "Learned advanced C++ and parallel programming techniques"
+            ],
+            "skills": [
+                "CUDA",
+                "C++",
+                "Python",
+                "Optimization",
+                "Parallel Computing"
+            ]
+        },
+        {
+            "name": "Chatbot with Reinforcement Learning",
+            "description": "Intelligent chatbot using reinforcement learning and transformer architectures",
+            "highlights": [
+                "Implemented RL algorithms for dialogue optimization",
+                "Built transformer-based NLP models",
+                "Deployed using PyTorch and Deep Learning frameworks"
+            ],
+            "skills": [
+                "Python",
+                "PyTorch",
+                "NLP",
+                "Deep Learning",
+                "Reinforcement Learning",
+                "Transformers"
+            ]
+        },
+        {
+            "name": "Facial Recognition Authentication System",
+            "description": "Continuous user authentication using facial recognition and computer vision",
+            "highlights": [
+                "Developed computer vision models for face detection",
+                "Implemented deep learning models using TensorFlow",
+                "Built real-time authentication system"
+            ],
+            "skills": [
+                "Python",
+                "Computer Vision",
+                "Deep Learning",
+                "TensorFlow"
+            ]
+        },
+        {
+            "name": "Obstacle Detection for Autonomous Vehicles",
+            "description": "Real-time obstacle detection system for self-driving cars",
+            "highlights": [
+                "Built computer vision models for object detection",
+                "Implemented deep learning architectures in PyTorch",
+                "Optimized for real-time performance"
+            ],
+            "skills": [
+                "Python",
+                "Computer Vision",
+                "Deep Learning",
+                "PyTorch"
+            ]
+        },
+        {
+            "name": "Epistatic Effect as Regularizer in ANNs",
+            "description": "Research project on novel regularization techniques for neural networks",
+            "highlights": [
+                "Implemented custom regularization in PyTorch and TensorFlow",
+                "Conducted deep learning experiments",
+                "Published research findings"
+            ],
+            "skills": [
+                "Python",
+                "PyTorch",
+                "TensorFlow",
+                "Deep Learning"
+            ]
+        },
+        {
+            "name": "Video Game Classification",
+            "description": "NLP-based classification system for video game development problems",
+            "highlights": [
+                "Built NLP models for text classification",
+                "Used Scikit-Learn and ML algorithms",
+                "Performed data analysis on game development data"
+            ],
+            "skills": [
+                "Python",
+                "NLP",
+                "Machine Learning",
+                "Scikit-Learn",
+                "Data Analysis"
+            ]
+        },
+        {
+            "name": "College Twitter Android App",
+            "description": "Social networking Android application for college students",
+            "highlights": [
+                "Developed Android app using Java",
+                "Integrated Firebase for backend",
+                "Implemented SQL database for data storage"
+            ],
+            "skills": [
+                "Java",
+                "Android",
+                "Firebase",
+                "SQL"
+            ]
+        },
+        {
+            "name": "Parking Management System",
+            "description": "Enterprise parking management application with Spring Boot backend",
+            "highlights": [
+                "Built REST API using Spring Boot",
+                "Implemented MySQL database",
+                "Deployed on Apache Tomcat server"
+            ],
+            "skills": [
+                "Java",
+                "Spring Boot",
+                "MySQL",
+                "REST API",
+                "Apache Tomcat"
+            ]
+        }
+    ],
+    "implementations": [
+        {
+            "category": "Deep Learning",
+            "items": [
+                {
+                    "name": "Transformer",
+                    "description": "Attention Is All You Need implementation",
+                    "skills": [
+                        "Python",
+                        "PyTorch",
+                        "Transformers",
+                        "Deep Learning",
+                        "NLP",
+                        "NumPy"
+                    ]
+                },
+                {
+                    "name": "GPT",
+                    "description": "OpenAI GPT implementation",
+                    "skills": [
+                        "Python",
+                        "PyTorch",
+                        "Transformers",
+                        "NLP",
+                        "Generative AI",
+                        "Transfer Learning"
+                    ]
+                },
+                {
+                    "name": "GPT-2",
+                    "description": "124M parameter GPT-2 model",
+                    "skills": [
+                        "Python",
+                        "PyTorch",
+                        "Transformers",
+                        "NLP",
+                        "Generative AI",
+                        "Transfer Learning"
+                    ]
+                },
+                {
+                    "name": "Word2Vec",
+                    "description": "Word embeddings from scratch",
+                    "skills": [
+                        "Python",
+                        "PyTorch",
+                        "NLP",
+                        "NumPy"
+                    ]
+                },
+                {
+                    "name": "Flash Attention",
+                    "description": "Optimized attention mechanism",
+                    "skills": [
+                        "Python",
+                        "PyTorch",
+                        "CUDA",
+                        "Optimization",
+                        "Transformers",
+                        "Parallel Computing"
+                    ]
+                },
+                {
+                    "name": "CNN",
+                    "description": "Convolutional Neural Network",
+                    "skills": [
+                        "Python",
+                        "PyTorch",
+                        "NumPy",
+                        "Computer Vision",
+                        "Deep Learning"
+                    ]
+                },
+                {
+                    "name": "ResNet",
+                    "description": "Residual Network",
+                    "skills": [
+                        "Python",
+                        "PyTorch",
+                        "Computer Vision",
+                        "Deep Learning",
+                        "Transfer Learning"
+                    ]
+                },
+                {
+                    "name": "RNN",
+                    "description": "Recurrent Neural Network",
+                    "skills": [
+                        "Python",
+                        "PyTorch",
+                        "Deep Learning",
+                        "NumPy"
+                    ]
+                },
+                {
+                    "name": "Deep Neural Network",
+                    "description": "Multi-layer DNN from scratch",
+                    "skills": [
+                        "Python",
+                        "NumPy",
+                        "Deep Learning",
+                        "Matplotlib"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "ML Algorithms",
+            "items": [
+                {
+                    "name": "Linear Regression",
+                    "description": "From scratch implementation",
+                    "skills": [
+                        "Python",
+                        "NumPy",
+                        "Machine Learning",
+                        "Matplotlib"
+                    ]
+                },
+                {
+                    "name": "Logistic Regression",
+                    "description": "Binary classification",
+                    "skills": [
+                        "Python",
+                        "NumPy",
+                        "Machine Learning",
+                        "Matplotlib"
+                    ]
+                },
+                {
+                    "name": "SVM",
+                    "description": "Support Vector Machine",
+                    "skills": [
+                        "Python",
+                        "NumPy",
+                        "Machine Learning",
+                        "Scikit-Learn"
+                    ]
+                },
+                {
+                    "name": "K-Means",
+                    "description": "Clustering algorithm",
+                    "skills": [
+                        "Python",
+                        "NumPy",
+                        "Machine Learning",
+                        "Matplotlib"
+                    ]
+                },
+                {
+                    "name": "KNN",
+                    "description": "K-Nearest Neighbors",
+                    "skills": [
+                        "Python",
+                        "NumPy",
+                        "Machine Learning",
+                        "Scikit-Learn"
+                    ]
+                },
+                {
+                    "name": "PCA",
+                    "description": "Dimensionality reduction",
+                    "skills": [
+                        "Python",
+                        "NumPy",
+                        "Machine Learning",
+                        "Data Analysis"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Advanced",
+            "items": [
+                {
+                    "name": "LoRA",
+                    "description": "Low-Rank Adaptation",
+                    "skills": [
+                        "Python",
+                        "PyTorch",
+                        "Deep Learning",
+                        "Transfer Learning",
+                        "Transformers"
+                    ]
+                },
+                {
+                    "name": "MOE",
+                    "description": "Mixture of Experts",
+                    "skills": [
+                        "Python",
+                        "PyTorch",
+                        "Deep Learning",
+                        "Transformers"
+                    ]
+                },
+                {
+                    "name": "Nanochat",
+                    "description": "Minimal chatbot",
+                    "skills": [
+                        "Python",
+                        "PyTorch",
+                        "Transformers",
+                        "NLP",
+                        "Generative AI"
+                    ]
+                }
+            ]
+        }
+    ],
+    "skills": {
+        "programming": [
+            "Python",
+            "Java",
+            "C++",
+            "JavaScript"
+        ],
+        "ml_frameworks": [
+            "PyTorch",
+            "TensorFlow",
+            "Keras",
+            "Scikit-Learn"
+        ],
+        "ml_concepts": [
+            "Deep Learning",
+            "Machine Learning",
+            "NLP",
+            "Computer Vision",
+            "Transformers",
+            "Reinforcement Learning",
+            "Transfer Learning",
+            "Generative AI"
+        ],
+        "performance": [
+            "CUDA",
+            "Optimization",
+            "Parallel Computing"
+        ],
+        "backend": [
+            "SQL",
+            "MySQL",
+            "MongoDB",
+            "Redis",
+            "Elasticsearch",
+            "Spring Boot",
+            "REST API",
+            "Apache Tomcat"
+        ],
+        "mobile": [
+            "Android",
+            "Firebase"
+        ],
+        "data_science": [
+            "NumPy",
+            "Pandas",
+            "Matplotlib",
+            "Data Analysis"
+        ]
+    },
+    "education": [
+        {
+            "degree": "Bachelor of Technology",
+            "field": "Computer Science",
+            "institution": "Your University",
+            "year": "2024"
+        }
+    ]
+}
