@@ -319,3 +319,53 @@
         opacity: 0.9;
     }
 }
+
+/* Hacker Hero Terminal Styles */
+.terminal-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.terminal-output {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #3fb950; /* Terminal Green */
+    background: #0d1117;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+    overflow-y: auto;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-line {
+    margin-bottom: 0.2rem;
+    line-height: 1.4;
+}
+
+.dynamic-greeting {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.8s ease-out;
+}
+
+.dynamic-greeting.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.highlight {
+    color: #58a6ff;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}

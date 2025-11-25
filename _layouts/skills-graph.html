@@ -6,8 +6,9 @@ author_profile: true
 <div class="homepage-container">
     <!-- Hero Section -->
     <div class="hero-section">
-        <div class="hero-content">
-            <h1>Hello! Are you hiring? <span class="wave">👋</span></h1>
+        <div class="hero-content terminal-hero">
+            <div id="terminal-output" class="terminal-output"></div>
+            <h1 id="dynamic-greeting" class="dynamic-greeting">Hello! Are you hiring? <span class="wave">👋</span></h1>
             <p class="hero-subtitle">Explore my interactive resume tailored for your role, or visualize my skills
                 network.</p>
 
@@ -77,3 +78,4 @@ author_profile: true
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <link rel="stylesheet" href="{{ '/assets/css/skills-graph.css' | relative_url }}">
 <script src="{{ '/assets/js/skills-graph.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/hacker-hero.js' | relative_url }}"></script>
