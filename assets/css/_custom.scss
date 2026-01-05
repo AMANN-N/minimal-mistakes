@@ -1,125 +1,96 @@
-/* Custom Card Styling - Dark Theme */
+/* Custom Card Styling - Minimalist White Theme */
 .archive__card {
-    background: #2d333b;
-    /* Dark card background */
-    border: 1px solid #444c56;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background: #ffffff;
+    border: 1px solid #eaecef;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     height: 260px;
-    /* Taller to fit title and button */
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: all 0.2s ease-in-out;
 }
 
 .archive__card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-    border-color: #58a6ff;
-    /* Highlight border on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #000;
 }
 
 .archive__card-header {
-    /* Formal Dark Gradient: Deep Slate to Muted Blue */
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: #f8f9fa;
     padding: 1rem;
     text-align: center;
-    color: #ffffff;
+    color: #333;
     min-height: 165px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #eaecef;
 }
 
 .archive__card-header i {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: #333;
 }
 
 .archive__card-header .archive__item-title {
     margin: 0;
-    font-size: 0.8rem;
-    color: #ffffff;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 0.75rem;
+    /* kept the placard fix */
+    color: #333;
     font-weight: 600;
-    letter-spacing: 0.3px;
-    line-height: 1.3;
+    line-height: 1.35;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
-    /* Allow 3 lines */
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
-    word-break: break-word;
 }
 
-.archive__card-header .archive__item-title a {
-    color: #ffffff;
-    text-decoration: none;
-}
+
 
 .archive__card-body {
-    padding: 1.2rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
     flex-direction: column;
-    color: #adbac7;
-    /* Muted text for dark mode */
+    background: #fff;
 }
 
-.archive__item-subtitle {
-    font-size: 0.95em;
-    margin-bottom: 0.4em;
-    color: #e6edf3;
-    /* Brighter text for subtitles */
-    font-weight: 600;
-}
-
-.archive__item-excerpt {
-    font-size: 0.85em;
-    color: #adbac7;
-    flex-grow: 1;
-    margin-bottom: 0.8rem;
-    line-height: 1.4;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    /* Limit to 3 lines */
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-    word-break: break-word;
-}
-
-.btn--danger {
-    background-color: transparent;
-    color: #58a6ff;
-    border: 1px solid #58a6ff;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
+/* Button Refinement - Red */
+.btn--danger,
+.btn,
+.btn--primary {
+    background-color: #d9534f !important;
+    color: #fff !important;
+    border: 1px solid #d9534f !important;
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
     text-align: center;
     text-decoration: none;
-    align-self: flex-start;
-    width: 100%;
     font-weight: 500;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     transition: all 0.2s ease;
-    margin-top: auto;
-    /* Push button to bottom */
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.btn--danger:hover {
-    background-color: #58a6ff;
-    color: #ffffff;
-    text-decoration: none;
+.btn--danger:hover,
+.btn:hover,
+.btn--primary:hover {
+    background-color: #c9302c !important;
+    color: #fff !important;
+    border-color: #ac2925 !important;
+    box-shadow: 0 4px 12px rgba(217, 83, 79, 0.2);
+    transform: translateY(-1px);
 }
 
-/* Grid Layout - Using CSS Grid for proper alignment */
+/* Grid Layout */
 .grid__wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -132,7 +103,6 @@
     width: 100%;
 }
 
-/* Responsive grid */
 @media (max-width: 64em) {
     .grid__wrapper {
         grid-template-columns: repeat(3, 1fr);
@@ -151,66 +121,17 @@
     }
 }
 
-/* Portfolio Single Page Styling */
+/* Portfolio Single Page */
 .portfolio-header {
     margin-bottom: 2rem;
-    border-bottom: 1px solid #444c56;
+    border-bottom: 1px solid #eee;
     padding-bottom: 1rem;
 }
 
 .portfolio-header .page__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
-    color: #58a6ff;
-}
-
-.portfolio-header .page__lead {
-    font-size: 1.25rem;
-    color: #adbac7;
-}
-
-.gallery-title {
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid #444c56;
-    padding-bottom: 0.5rem;
-    color: #58a6ff;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.gallery-item {
-    margin: 0;
-    background: #2d333b;
-    border: 1px solid #444c56;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s ease;
-}
-
-.gallery-item:hover {
-    transform: translateY(-3px);
-    border-color: #58a6ff;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-}
-
-.gallery-item figcaption {
-    padding: 0.5rem;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #adbac7;
-    background: #22272e;
+    color: #333;
 }
 
 .project-links {
@@ -218,26 +139,20 @@
     text-align: center;
 }
 
-.btn--large {
-    padding: 0.75rem 2rem;
-    font-size: 1.1rem;
-}
-
-/* ---------- Modal Overlay Styles ---------- */
+/* ---------- Modal Content Refinement ---------- */
 .archive-modal {
     display: none;
-    /* hidden by default */
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    /* Very light overlay */
+    backdrop-filter: blur(2px);
+    z-index: 9999;
     justify-content: center;
     align-items: center;
-    z-index: 999999;
-    /* Extremely high to cover everything */
     overflow-y: auto;
 }
 
@@ -245,74 +160,111 @@
     display: flex;
 }
 
-/* Hide masthead when modal is open */
-body:has(.archive-modal.is-open) .masthead {
-    z-index: -1 !important;
-    opacity: 0;
-}
-
 .archive-modal__content {
-    background: #2d333b;
-    /* match card background */
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    max-width: 90%;
-    max-height: 90vh;
+    padding: 2rem;
+    max-width: 800px;
+    width: 90%;
+    max-height: 85vh;
     overflow-y: auto;
-    padding: 1.5rem;
     position: relative;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    color: #333;
+    text-align: left;
+    /* Ensure text isn't centered incorrectly */
 }
 
 .archive-modal__close {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background: transparent;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #999;
+    background: none;
     border: none;
-    font-size: 1.8rem;
-    color: #fff;
     cursor: pointer;
+    line-height: 1;
 }
 
-.archive-modal__image {
-    width: 100%;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+.archive-modal__close:hover {
+    color: #000;
 }
 
+/* Typography - Minimal & Clean */
 .archive-modal__title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    /* Smaller than before */
+    font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #fff;
+    color: #000;
+    letter-spacing: -0.5px;
 }
 
 .archive-modal__subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 0.8rem;
-    color: #c9d1d9;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
 }
 
 .archive-modal__excerpt {
     font-size: 0.95rem;
-    color: #adbac7;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Ensure headings inside modal content are not huge */
+.archive-modal__content h3,
+.archive-modal__content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.archive-modal__content p {
+    font-size: 0.95rem;
     margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.archive-modal__content ul,
+.archive-modal__content ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .archive-modal__links .btn {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    border-color: #333;
+    color: #333;
 }
 
-/* Category Section Headers */
+.archive-modal__links .btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Category Section Headers (Site Wide) */
 .archive__subtitle {
-    font-size: 1.5rem;
-    color: #58a6ff;
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    color: #222;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #444c56;
+    border-bottom: 1px solid #ddd;
     font-weight: 600;
 }
 
-.archive__subtitle:first-of-type {
-    margin-top: 0;
+/* Hide masthead interaction when modal open */
+body:has(.archive-modal.is-open) .masthead {
+    display: none;
 }

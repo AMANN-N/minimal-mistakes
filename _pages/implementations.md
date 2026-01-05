@@ -1,5 +1,5 @@
 ---
-title: "Implementations"
+title: ""
 layout: archive
 permalink: /implementations/
 author_profile: true

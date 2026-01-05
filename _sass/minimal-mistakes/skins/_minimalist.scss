@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Minimalist Skin
+   ========================================================================== */
+
+/* Colors */
+$background-color: #ffffff !default;
+$text-color: #222222 !default;
+$muted-text-color: #555555 !default;
+$primary-color: #000000 !default;
+$border-color: #eeeeee !default;
+$code-background-color: #f4f4f4 !default;
+$code-background-color-dark: #333333 !default;
+$form-background-color: #f9f9f9 !default;
+$footer-background-color: #f9f9f9 !default;
+$link-color: #000000 !default;
+$link-color-hover: #444444 !default;
+$link-color-visited: #222222 !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $text-color !default;
+$navicon-link-color-hover: $text-color !default;
+
+.page__content {
+
+    .notice,
+    .notice--primary,
+    .notice--info,
+    .notice--warning,
+    .notice--success,
+    .notice--danger {
+        color: $text-color;
+        background: $form-background-color; // subtle gray
+        border-left-color: $text-color; // plain black border
+        box-shadow: none;
+    }
+}
+
+.page__footer {
+    color: $muted-text-color !important;
+}
+
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+    color: inherit;
+}

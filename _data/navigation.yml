@@ -2,11 +2,9 @@
 main:
   - title: "Home"
     url: /
-  - title: "Projects"
-    url: /projects/
   - title: "Work Experience"
     url: /work-experience/
-  - title: "Blogs"
-    url: /blogs/
   - title: "Implementations"
     url: /implementations/
+  - title: "Projects"
+    url: /projects/

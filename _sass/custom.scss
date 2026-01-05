@@ -1,0 +1,40 @@
+/* Custom styles for Nerdy/Minimal Aesthetic */
+
+/* Transition Animation */
+body {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Abstracted Data (Details/Summary) Style */
+details {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.dark-theme details { /* Dark theme awareness if possible, or generic */
+   background: #333;
+   border-color: #444;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+}
+
+details[open] summary ~ * {
+    animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

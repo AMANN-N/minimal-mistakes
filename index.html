@@ -1,4 +1,44 @@
 ---
-layout: skills-graph
+layout: single
 author_profile: true
 ---
+
+<div class="nerdy-intro">
+    <p><strong>Machine Learning Engineer</strong>. Building scalable AI systems. <br>
+        Based in Gurugram, India. Working at OfBusiness.</p>
+</div>
+
+<div class="abstracted-content">
+    <details>
+        <summary>Latest Updates</summary>
+        <ul>
+            <li><strong>2024</strong>: Architecting RAG pipelines for enterprise search.</li>
+            <li><strong>2023</strong>: Dual Degree from BITS Pilani (EEE + Bio).</li>
+            <li><strong>2022</strong>: Research Intern at Samsung R&D.</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Selected Projects</summary>
+        <ul>
+            <li><strong>RAG Pipeline</strong>: Enterprise-grade retrieval system.</li>
+            <li><strong>Vision Systems</strong>: Real-time object detection.</li>
+            <li><strong>Distributed ML</strong>: Multi-node LLM training optimization.</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Education</summary>
+        <ul>
+            <li><strong>BITS Pilani</strong>: Bachelor of Engineering (EEE) + M.Sc. (Biological Sciences).</li>
+        </ul>
+    </details>
+</div>
+
+<h3 class="archive__subtitle">Blogs</h3>
+
+<div class="grid__wrapper">
+    {% for post in site.blogs %}
+    {% include blog-card.html %}
+    {% endfor %}
+</div>

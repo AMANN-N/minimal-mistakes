@@ -21,12 +21,5 @@ Modal markup for a portfolio item. Expected variable: post (the collection item)
 
         {{ post.content | markdownify }}
 
-        {% if post.github %}
-        <p class="archive-modal__links">
-            <a href="{{ post.github }}" target="_blank" rel="noopener" class="btn btn--primary">
-                <i class="fab fa-github"></i> View on GitHub
-            </a>
-        </p>
-        {% endif %}
     </div>
 </div>
