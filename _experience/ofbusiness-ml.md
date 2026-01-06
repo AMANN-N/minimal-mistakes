@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: "ML Engineer at OfBusiness"
-excerpt: "Built NLP models, sector classification systems, and predictive analytics pipelines at OFB-Nexizo."
+excerpt: "Working as an ML Engineer within Ofbusiness's data science team. Focused on building reliable ML and LLM-powered systems that operate at production scale."
 icon: "fas fa-briefcase"
 image: "/assets/img/portfolio/ml-engineer.png"
 weight: 1
@@ -19,11 +19,24 @@ github: ""
   </div>
   <div>
     <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Dates</span><br>
-    <strong>Jan 2024 - Present</strong>
+    <strong>July 2024 - Present</strong>
   </div>
 </div>
 
-## Responsibilities
-*   Built NLP models, sector classification systems, and predictive analytics pipelines at OFB-Nexizo, improving business insight accuracy, accelerating automated content creation through image generation and cutting manual effort by 40%.
-*   Created an AutoModel pipeline which increased system efficiency by reducing multiple model training and review steps to one.
-*   Worked on automatic Code debugging service which could identify bugs from system logs and create a PR with a fix with 0 human input.
+## Key Contributions
+
+* Built and maintained relevance and classification pipelines used to match large volumes of documents and entities with high precision.
+* Designed automated model pipelines to reduce manual retraining, evaluation, and review overhead.
+* Implemented retrieval-augmented generation (RAG) systems for structured and unstructured enterprise data.
+* Introduced embedding reuse and caching strategies to reduce inference cost and latency in high-traffic systems.
+* Integrated LLM-based OCR and enrichment workflows to extract usable signals from noisy, real-world documents.
+* Worked on LLM-driven automation tools, including systems that reason over logs and system outputs to assist with debugging and remediation.
+* Iterated on prompt design and evaluation to improve output reliability and reduce downstream errors
+
+
+## Tech Stack
+
+* Languages: Python, C++, CUDA
+* ML / AI: PyTorch, NLP, Embeddings, RAG, LLMs
+* Infra: Docker, Redis, MongoDB, AWS
+* Systems: Async services, high-throughput APIs, production ML pipelines
