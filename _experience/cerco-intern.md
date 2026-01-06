@@ -5,9 +5,20 @@ excerpt: "Built advanced speech recognition models in PyTorch, applying sub-samp
 icon: "fas fa-brain"
 ---
 
-**Role:** Intern  
-**Company:** The Brain and Cognition Research Center (CerCo) | Toulouse, France  
-**Dates:** July 2023 - Dec 2023
+<div class="notice--info" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; background: #f8f9fa; border-left: 4px solid #007bff; padding: 1em;">
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Role</span><br>
+    <strong>Intern</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Company</span><br>
+    <strong>CerCo (France)</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Dates</span><br>
+    <strong>July 2023 - Dec 2023</strong>
+  </div>
+</div>
 
 ## Responsibilities
 *   Built advanced speech recognition models in PyTorch, applying sub-sampling and dilated convolutions to boost accuracy, achieving a 5% increase in accuracy compared to the baseline model.

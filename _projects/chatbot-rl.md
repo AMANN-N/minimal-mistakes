@@ -7,9 +7,20 @@ image: "/assets/img/portfolio/chatbot-rl-cover.png"
 github: "https://github.com/AMANN-N/Chatbot-Reinforcement-Learning"
 ---
 
-**Type:** Academic/Research Project  
-**Duration:** 2023  
-**Tech Stack:** Python, PyTorch, Reinforcement Learning
+<div class="notice--info" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; background: #f0f7fd; border-left: 4px solid #007bff; padding: 1em;">
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Type</span><br>
+    <strong>Academic/Research Project</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Duration</span><br>
+    <strong>2023</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Tech Stack</span><br>
+    <strong>Python, PyTorch, Reinforcement Learning</strong>
+  </div>
+</div>
 
 ## Overview
 Built a goal-oriented learning framework for simulated conversations, combining SEQ2SEQ models with RL to deliver more context-aware responses.

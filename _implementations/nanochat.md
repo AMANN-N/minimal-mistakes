@@ -8,8 +8,16 @@ github: "https://github.com/AMANN-N/ml-playground/tree/main/Nanochat"
 category: "advanced"
 ---
 
-**Type:** Conversational AI Project  
-**Framework:** PyTorch  
+<div class="notice--info" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; background: #e8f4f8; border-left: 4px solid #17a2b8; padding: 1em;">
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Type</span><br>
+    <strong>Conversational AI Project</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Framework</span><br>
+    <strong>PyTorch</strong>
+  </div>
+</div>  
 
 ## Overview
 Minimal implementation of a chatbot using transformer architecture, designed for educational purposes and understanding conversational AI fundamentals.

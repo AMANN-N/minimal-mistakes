@@ -8,8 +8,16 @@ github: "https://github.com/AMANN-N/ml-playground/tree/main/K%20Nearest%20Neighb
 category: "ml-algorithms"
 ---
 
-**Type:** Machine Learning Algorithm  
-**Framework:** NumPy  
+<div class="notice--info" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; background: #e8f4f8; border-left: 4px solid #17a2b8; padding: 1em;">
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Type</span><br>
+    <strong>Machine Learning Algorithm</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Framework</span><br>
+    <strong>NumPy</strong>
+  </div>
+</div>  
 
 ## Overview
 Implementation of K-Nearest Neighbors algorithm from scratch, a simple yet powerful non-parametric method for classification and regression.

@@ -7,9 +7,20 @@ image: "/assets/img/portfolio/epistatic-cover.png"
 github: "https://github.com/AMANN-N/Neural-Network-assignment"
 ---
 
-**Type:** Research Project  
-**Duration:** 2023  
-**Tech Stack:** Python, PyTorch, TensorFlow
+<div class="notice--info" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; background: #f0f7fd; border-left: 4px solid #007bff; padding: 1em;">
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Type</span><br>
+    <strong>Research Project</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Duration</span><br>
+    <strong>2023</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Tech Stack</span><br>
+    <strong>Python, PyTorch, TensorFlow</strong>
+  </div>
+</div>
 
 ## Overview
 Incorporated epistatic-inspired regularization into neural networks, implemented in PyTorch/TensorFlow to improve model robustness.

@@ -7,9 +7,20 @@ image: "/assets/img/portfolio/kreiman-cover.png"
 github: ""
 ---
 
-**Role:** SDE Intern  
-**Company:** OfBusiness (OFB Tech Pvt Ltd) | Gurugram, India  
-**Dates:** Jan 2024 - Dec 2024
+<div class="notice--info" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; background: #f8f9fa; border-left: 4px solid #007bff; padding: 1em;">
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Role</span><br>
+    <strong>SDE Intern</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Company</span><br>
+    <strong>OfBusiness</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Dates</span><br>
+    <strong>Jan 2024 - Dec 2024</strong>
+  </div>
+</div>
 
 ## Responsibilities
 *   Built NLP models, sector classification systems, and predictive analytics pipelines at OFB-Nexizo, improving business insight accuracy, accelerating automated content creation through image generation and cutting manual effort by 40%.

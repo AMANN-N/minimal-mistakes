@@ -8,8 +8,16 @@ github: "https://github.com/AMANN-N/ml-playground/tree/main/Naive%20Deep%20Neura
 category: "deep-learning"
 ---
 
-**Type:** Deep Learning Fundamentals  
-**Framework:** NumPy  
+<div class="notice--info" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; background: #e8f4f8; border-left: 4px solid #17a2b8; padding: 1em;">
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Type</span><br>
+    <strong>Deep Learning Fundamentals</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Framework</span><br>
+    <strong>NumPy</strong>
+  </div>
+</div>  
 
 ## Overview
 Complete implementation of a deep neural network from scratch, including forward propagation, backpropagation, and various optimization techniques.

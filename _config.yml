@@ -19,7 +19,7 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Aman Raj Singh"
 title_separator          : "-"
-subtitle                 : "ML Engineer | BITS Pilani"
+subtitle                 : "ML Engineer | EEE @ BITS Pilani"
 name                     : "Aman Raj Singh"
 description              : "Portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -113,9 +113,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Aman Raj Singh"
+  name             : ""
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "ML Engineer at OfBusiness. B.E. Electrical Engineering from BITS Pilani"
+  bio              : "Exploring end-to-end AI systems from research and modeling to production deployment and performance optimization."
   location         : "Gurugram, India"
   email            : "iamann579@gmail.com"
   links:

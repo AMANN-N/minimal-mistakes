@@ -8,9 +8,20 @@ github: "https://github.com/AMANN-N/ml-playground"
 category: "advanced"
 ---
 
-**Type:** Large-Scale Model Implementation  
-**Framework:** PyTorch  
-**Paper:** [Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+<div class="notice--info" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; background: #e8f4f8; border-left: 4px solid #17a2b8; padding: 1em;">
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Type</span><br>
+    <strong>Large-Scale Model Implementation</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Framework</span><br>
+    <strong>PyTorch</strong>
+  </div>
+  <div>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Paper</span><br>
+    <strong><a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf">Language Models are Unsupervised Multitask Learners</a></strong>
+  </div>
+</div>
 
 ## Overview
 Implementation of GPT-2 (124 million parameter version) from scratch in PyTorch, showcasing the capabilities of large-scale language models for zero-shot task transfer.
