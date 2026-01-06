@@ -1,18 +1,38 @@
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    {% assign use_direct_link = false %}
+    {% if post.collection == 'implementations' %}
+    {% if post.category == 'deep-learning' or post.category == 'ml-algorithms' %}
+    {% assign use_direct_link = true %}
+    {% endif %}
+    {% endif %}
+
+    {% capture card_content %}
+    <div class="archive__card-header">
+      {% if post.icon %}
+      <i class="{{ post.icon }}"></i>
+      {% endif %}
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        {{ post.title }}
+      </h2>
+    </div>
+    <div class="archive__card-body">
+      <span class="btn btn--danger">{% if use_direct_link %}Code{% else %}Explore{% endif %}</span>
+    </div>
+    {% endcapture %}
+
+    {% if use_direct_link %}
+    <a href="{{ post.github }}" target="_blank" rel="noopener noreferrer"
+      style="text-decoration: none; color: inherit; display: block;">
+      <div class="archive__card">
+        {{ card_content }}
+      </div>
+    </a>
+    {% else %}
     <div class="archive__card" data-modal="modal-{{ post.slug }}">
-      <div class="archive__card-header">
-        {% if post.icon %}
-        <i class="{{ post.icon }}"></i>
-        {% endif %}
-        <h2 class="archive__item-title no_toc" itemprop="headline">
-          {{ post.title }}
-        </h2>
-      </div>
-      <div class="archive__card-body">
-        <span class="btn btn--danger">Explore</span>
-      </div>
+      {{ card_content }}
     </div>
     {% include archive-modal.html post=post %}
+    {% endif %}
   </article>
 </div>
