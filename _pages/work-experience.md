@@ -6,7 +6,8 @@ author_profile: true
 ---
 
 <div class="grid__wrapper">
-  {% for post in site.experience %}
+  {% assign experience = site.experience | sort: 'weight' %}
+  {% for post in experience %}
     {% include archive-card.html %}
   {% endfor %}
 </div>
