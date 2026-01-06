@@ -19,9 +19,9 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Aman Raj Singh"
 title_separator          : "-"
-subtitle                 : "ML Engineer | BITS Pilani Graduate"
+subtitle                 : "ML Engineer | BITS Pilani"
 name                     : "Aman Raj Singh"
-description              : "Portfolio of Aman Raj Singh - ML Engineer"
+description              : "Portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,22 +115,19 @@ analytics:
 author:
   name             : "Aman Raj Singh"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "ML Engineer at OfBusiness. Dual Degree graduate from BITS Pilani (EEE + Biological Sciences)."
+  bio              : "ML Engineer at OfBusiness. B.E. Electrical Engineering from BITS Pilani"
   location         : "Gurugram, India"
   email            : "iamann579@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:iamann579@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/AMANN-N"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/AmanRajSingh"
+      url: "https://www.linkedin.com/in/aman-raj-singh-397981192/"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=AmanRajSingh"
+      url: "https://scholar.google.com/citations?hl=en&user=R4lGVAcAAAAJ"
 
 # Site Footer
 footer:
