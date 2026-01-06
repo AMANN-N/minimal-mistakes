@@ -3,6 +3,7 @@ layout: portfolio-single
 title: "Intern at CerCo (France)"
 excerpt: "Built advanced speech recognition models in PyTorch, applying sub-sampling and dilated convolutions to boost accuracy."
 icon: "fas fa-brain"
+image: "/assets/img/portfolio/cerco.png"
 ---
 
 <div class="notice--info" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; background: #f8f9fa; border-left: 4px solid #007bff; padding: 1em;">

@@ -3,7 +3,7 @@ layout: portfolio-single
 title: "ML Engineer at OfBusiness"
 excerpt: "Built NLP models, sector classification systems, and predictive analytics pipelines at OFB-Nexizo."
 icon: "fas fa-briefcase"
-image: "/assets/img/portfolio/kreiman-cover.png"
+image: "/assets/img/portfolio/ml-engineer.png"
 github: ""
 ---
 

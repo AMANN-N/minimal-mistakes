@@ -3,7 +3,7 @@ layout: portfolio-single
 title: "Intern — Kreiman Lab @ Harvard Medical School"
 excerpt: "Investigated human–machine linguistic imitation and Turing Test evaluation through controlled behavioral experiments and LLM benchmarking."
 icon: "fas fa-brain"
-image: "/assets/img/portfolio/kreiman-cover.png"
+image: "/assets/img/portfolio/kreiman.png"
 github: ""
 ---
 
