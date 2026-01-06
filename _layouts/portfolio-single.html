@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+{% if page.header.overlay_color or page.header.overlay_image %}
   {% include page__hero.html %}
 {% endif %}
 
@@ -17,13 +17,28 @@ layout: default
       
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header class="portfolio-header">
-          <h1 class="page__title" itemprop="headline">
-            {{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}
-          </h1>
-          {% if page.description %}
-            <p class="page__lead">{{ page.description }}</p>
-          {% endif %}
-          {% include page__meta.html %}
+          <div class="placard-header-container" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; margin-bottom: 2rem;">
+            
+            {% assign featured_image = page.header.image | default: page.image %}
+            {% if featured_image %}
+              <div class="placard-image-container" style="flex: 0 0 300px; max-width: 100%;">
+                <img src="{{ featured_image | relative_url }}" alt="{{ page.title }}" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); display: block;">
+                {% if page.header.caption %}
+                  <figcaption class="page__hero-caption" style="text-align: center; margin-top: 0.5em; font-size: 0.8em; color: #666;">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+                {% endif %}
+              </div>
+            {% endif %}
+
+            <div class="placard-text-container" style="flex: 1; min-width: 300px;">
+              <h1 class="page__title" itemprop="headline">
+                {{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}
+              </h1>
+              {% if page.description %}
+                <p class="page__lead">{{ page.description }}</p>
+              {% endif %}
+              {% include page__meta.html %}
+            </div>
+          </div>
         </header>
       {% endunless %}
 
