@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: "Intern at Kreiman Lab @ Harvard Medical School"
-excerpt: "Investigated human–machine linguistic imitation and Turing Test evaluation through controlled behavioral experiments and LLM benchmarking."
+excerpt: "Worked on experimental systems to study human–machine imitation in language, inspired by classical Turing Test formulations."
 icon: "fas fa-brain"
 image: "/assets/img/portfolio/kreiman.png"
 weight: 4
@@ -14,77 +14,41 @@ github: ""
     <strong>Research Intern</strong>
   </div>
   <div>
-    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Company</span><br>
-    <strong>Kreiman Lab (Harvard)</strong>
+    <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Lab</span><br>
+    <strong>Kreiman Lab @ Harvard Medical School</strong>
   </div>
   <div>
     <span style="color: #6c757d; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Dates</span><br>
-    <strong>Nov 2022 - June 2023</strong>
+    <strong>Nov 2022 – June 2023</strong>
   </div>
 </div>
 
-## Overview
-During my research internship at **Kreiman Lab — Harvard Medical School**, I led development and evaluation efforts for experimental AI systems designed to compare **human responses vs GPT-based LLMs** in linguistic reasoning tasks. I built a controlled **human experiment platform using JsPsych**, collected behavioral data, and analyzed LLM performance to support an academic publication.
 
-**Publication:** [Turing Test Revisited: Exploring Human–Machine Imitation in Large Language Models](https://arxiv.org/abs/2211.13087)
-
----
-
-## 🔍 Research Problem
-Evaluating “human-like intelligence” in AI requires more than benchmark scores—**we need experiments where humans interact and are compared directly against AI responses**, similar to the Turing Test, but measurable and repeatable.
+**Publication:**  
+[Turing Test Revisited: Exploring Human–Machine Imitation in Large Language Models](https://arxiv.org/abs/2211.13087)
 
 ---
 
-## 🛠 Approach & Solution
-- Built a **JsPsych-based experimental web platform** enabling structured interactions between participants and LLMs.
-- Collected response samples from both humans and models to measure linguistic similarity, reasoning depth, and deception capability.
-- Conducted **comparative benchmarking across multiple GPT-based models** using controlled Turing-Test-style evaluation.
-- Automated experiment management and dataset processing to generate reproducible analysis reports.
+## Research Goal
+
+Standard NLP benchmarks capture task performance, but they often fail to measure **human-likeness** in reasoning, response style, and deception.
+The goal of this work was to explore whether LLMs could be **indistinguishable from humans in controlled interaction settings**, and to design experiments where this comparison could be measured quantitatively.
 
 ---
 
-## 📈 Key Contributions & Outcomes
-| Contribution | Impact |
-|-------------|--------|
-| Built experiment system for large-scale human data collection | Enabled repeatable controlled testing |
-| Designed behavioral scoring & model comparison pipeline | Reduced manual evaluation effort by **80%** |
-| Benchmarked multiple LLMs under Turing-Test-style settings | Insights contributed to research publication |
-| Supported interface design, data organization, and analysis | Improved research delivery speed and clarity |
+## Key Contributions
 
----
+- Built a **browser-based experimental platform** using JsPsych to run controlled human studies.
+- Designed interaction protocols where participants responded to prompts identical to those given to language models.
+- Collected and organized paired datasets of **human and model-generated responses**.
+- Performed comparative analysis across multiple language models under Turing-style conditions.
+- Automated experiment execution and data aggregation to ensure repeatability and statistical rigor.
 
-## 📊 Experiment Workflow
+## Tech Stack
 
-![Experiment Diagram Placeholder](/assets/img/diagrams/turing_test_experiment_flow.png)
-*Participant → Web Interface → GPT Model → Response Capture → Scoring → Analysis & Comparison*
+- **Python**, PyTorch, HuggingFace Transformers
+- **JsPsych**, JavaScript, HTML/CSS
+- Pandas, NumPy
+- Statistical analysis and visualization tooling
 
----
-
-## 🖥 Screenshots / UI
-| Experiment Interface | Human vs AI Evaluation Results |
-|----------------------|-------------------------------|
-| ![UI](/assets/img/screenshots/jspsych_ui.png) | ![Results](/assets/img/screenshots/experiment_data.png) |
-
----
-
-## 🧰 Tech Stack
-**Python**, PyTorch, HuggingFace Transformers, GPT models  
-**JsPsych**, JavaScript, HTML/CSS  
-Pandas, NumPy, Statistical Evaluation Tooling  
-
----
-
-## ⭐ Featured Publication
-> *Turing Test Revisited: Exploring Human–Machine Imitation in LLMs*  
-> Published through Harvard Medical School research collaboration  
-🔗 https://arxiv.org/abs/2211.13087  
-
----
-
-## 📥 Demo & Access
-🔒 Internal research system — demo and code accessible upon request
-
----
-📎 Tools: GPT Models · JsPsych · PyTorch · Transformers · NumPy · Pandas  
-🎯 Focus: Cognitive AI · Benchmarking · Behavioral Experimentation
 ---

@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: "Software Engineer at OfBusiness"
-excerpt: "Built NLP models, sector classification systems, and predictive analytics pipelines at OFB-Nexizo."
+excerpt: "Worked on large-scale backend systems, performance optimization, and platform modernization at OfBusiness."
 icon: "fas fa-briefcase"
 image: "/assets/img/portfolio/ofb-sde.png"
 weight: 2
@@ -23,7 +23,33 @@ github: ""
   </div>
 </div>
 
-## Responsibilities
-*   Built NLP models, sector classification systems, and predictive analytics pipelines at OFB-Nexizo, improving business insight accuracy, accelerating automated content creation through image generation and cutting manual effort by 40%.
-*   Created an AutoModel pipeline which increased system efficiency by reducing multiple model training and review steps to one.
-*   Worked on automatic Code debugging service which could identify bugs from system logs and create a PR with a fix with 0 human input.
+
+## Key Contributions
+
+* Worked as a Software Engineer Intern on core backend systems at OfBusiness, contributing to high-traffic, production-grade services.
+* Built and scaled backend features for **OASys**, an internal order management platform.
+* Improved database queries and service logic to reduce latency and improve throughput.
+* Collaborated with senior engineers to design changes that could be rolled out incrementally in production.
+
+---
+
+## Platform Modernization
+
+* Contributed to upgrading a **~1.2 million line legacy codebase** to a modern stack:
+Spring Boot 3.3,
+Hibernate 6.5,
+Java 21
+* Helped migrate and validate upgrades for core infrastructure components, including:
+MongoDB,
+Redis,
+MySQL
+* Ensured backward compatibility and stability during large-scale upgrades.
+
+---
+
+## Tech Stack
+
+* **Languages:** Java, SQL
+* **Frameworks:** Spring Boot, Hibernate
+* **Databases:** MongoDB, Redis, MySQL
+* **Tools:** Git, Docker, CI/CD pipelines
