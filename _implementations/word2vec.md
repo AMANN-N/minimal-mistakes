@@ -39,4 +39,4 @@ Implementation of Word2Vec algorithm from scratch in PyTorch, including both Ski
 - **Applications:** NLP, semantic similarity, word analogies
 
 ## GitHub Repository
-🔗 [View on GitHub](https://github.com/AMANN-N/ml-playground)
+🔗 [View on GitHub](https://github.com/AMANN-N/ml-playground/tree/main/Word2Vec)

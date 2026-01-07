@@ -39,4 +39,4 @@ Complete implementation of the Transformer architecture from scratch in PyTorch,
 - **Applications:** Machine translation, sequence-to-sequence tasks
 
 ## GitHub Repository
-🔗 [View on GitHub](https://github.com/AMANN-N/ml-playground)
+🔗 [View on GitHub](https://github.com/AMANN-N/ml-playground/tree/main/Transformer)

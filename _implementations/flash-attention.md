@@ -45,4 +45,4 @@ Implementation of Flash Attention algorithm that speeds up attention computation
 - Better GPU utilization
 
 ## GitHub Repository
-🔗 [View on GitHub](https://github.com/AMANN-N/ml-playground)
+🔗 [View on GitHub](https://github.com/AMANN-N/ml-playground/tree/main/flash_attn_cuda)

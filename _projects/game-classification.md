@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: "Classification of Video-Game Development Problems using Word Embeddings"
-excerpt: "Applied embeddings (Word2Vec, FastText, BERT) with classifiers (SVM, RF, KNN) to categorize video-game dev issues, improving classification reliability by 18%."
+excerpt: "Applied word embeddings and classical ML classifiers to categorize video-game development issues from postmortem reports."
 icon: "fas fa-gamepad"
 image: "/assets/img/portfolio/game-classification-cover.png"
 github: "https://github.com/AMANN-N/Prediction-using-word-embedding-techniques"
@@ -23,18 +23,42 @@ github: "https://github.com/AMANN-N/Prediction-using-word-embedding-techniques"
 </div>
 
 ## Overview
-Applied embeddings (Word2Vec, FastText, BERT) with classifiers (SVM, RF, KNN) to categorize video-game dev issues, improving classification reliability by 18%.
 
-## Key Features
-- Used PCA/LDA for dimensionality reduction
-- Validated significance with ANOVA
-- Improved classification reliability by 18%
+This project studies **common problems faced during video-game development** by analyzing textual postmortem reports using machine learning and NLP techniques.
 
-## Technologies Used
-- **Languages:** Python
-- **Techniques:** Word2Vec, FastText, BERT
-- **Classifiers:** SVM, Random Forest, KNN
-- **Tools:** PCA, LDA, ANOVA
+Because postmortems are often informally written and poorly structured, the work explores whether **automated classification using word embeddings** can reliably identify development issues and help developers and researchers better understand recurring challenges.
 
-## GitHub Repository
+---
+
+## Key Details
+
+- Processed and analyzed **video-game postmortem reports** describing development challenges.
+- Used multiple embedding techniques — **Word2Vec, FastText, and BERT** — to represent textual problem descriptions.
+- Applied classical classifiers (**SVM, Random Forest, KNN**) on top of embeddings.
+- Used **PCA and LDA** for dimensionality reduction and representation analysis.
+- Performed **statistical validation using ANOVA** to compare model performance.
+- Achieved an **18% improvement in classification reliability** over baseline approaches.
+
+---
+
+## Tech Stack
+
+- **Languages:** Python  
+- **Embeddings:** Word2Vec, FastText, BERT  
+- **Classifiers:** SVM, Random Forest, KNN  
+- **Analysis Tools:** PCA, LDA, ANOVA  
+
+---
+
+## Code
+
 🔗 [View on GitHub](https://github.com/AMANN-N/Prediction-using-word-embedding-techniques)
+
+---
+
+## Publication
+
+🔗 [Paper](https://aclanthology.org/2021.icon-main.56/)
+
+
+---

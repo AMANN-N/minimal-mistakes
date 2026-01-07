@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: "Epistatic Effect as Regularizer in ANNs"
-excerpt: "Incorporated epistatic-inspired regularization into neural networks, implemented in PyTorch/TensorFlow to improve model robustness."
+excerpt: "Explored biologically inspired epistatic regularization in neural networks to improve robustness and generalization."
 icon: "fas fa-brain"
 image: "/assets/img/portfolio/epistatic-cover.png"
 github: "https://github.com/AMANN-N/Neural-Network-assignment"
@@ -23,18 +23,32 @@ github: "https://github.com/AMANN-N/Neural-Network-assignment"
 </div>
 
 ## Overview
-Incorporated epistatic-inspired regularization into neural networks, implemented in PyTorch/TensorFlow to improve model robustness.
 
-## Key Features
-- Leveraged GPU acceleration on CIFAR-10 dataset
-- Observed accuracy and generalization gains over baseline architectures
-- Implemented custom regularization techniques
+This project investigates **epistatic effects inspired by biological neural systems** as a form of regularization in artificial neural networks.
 
-## Technologies Used
-- **Languages:** Python
-- **Frameworks:** PyTorch, TensorFlow
-- **Datasets:** CIFAR-10
-- **Concepts:** Neural Network Regularization, GPU Acceleration
+The core idea is to model interactions between neurons based on properties such as spatial distance, neuron size, and myelination, and use these interactions to influence activations during training.
 
-## GitHub Repository
-🔗 [View on GitHub](https://github.com/AMANN-N/Neural-Network-assignment)
+---
+
+## Key Details
+
+- Implemented **custom regularization mechanisms** based on pairwise neuron interactions.
+- Modeled epistatic effects using distance-based, size-based, and myelin-inspired terms.
+- Integrated the regularizer into CNN-based architectures.
+- Evaluated the approach on **CIFAR-10**, observing improvements in robustness and generalization compared to baseline models.
+- Leveraged GPU acceleration to support experimentation at scale.
+
+---
+
+## Tech Stack
+
+- **Languages:** Python  
+- **Frameworks:** PyTorch, TensorFlow  
+- **Datasets:** CIFAR-10  
+- **Concepts:** Neural network regularization, biologically inspired modeling, GPU acceleration  
+
+---
+
+## Code
+
+🔗 [View on GitHub](https://github.com/AMANN-N/Ephaptic-Effect-Main)
