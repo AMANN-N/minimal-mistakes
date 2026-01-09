@@ -139,7 +139,7 @@
             ]
         },
         {
-            "name": "Epistatic Effect as Regularizer in ANNs",
+            "name": "ephaptic Effect as Regularizer in ANNs",
             "description": "Research project on novel regularization techniques for neural networks",
             "highlights": [
                 "Implemented custom regularization in PyTorch and TensorFlow",

@@ -53,7 +53,7 @@ const graphData = {
         { id: "chatbot-rl", name: "Chatbot RL", type: "project", url: "/projects/chatbot-rl/", size: 12 },
         { id: "facial-recognition", name: "Facial Recognition", type: "project", url: "/projects/facial-recognition/", size: 12 },
         { id: "obstacle-detection", name: "Obstacle Detection", type: "project", url: "/projects/obstacle-detection/", size: 12 },
-        { id: "epistatic-regularizer", name: "Epistatic Regularizer", type: "project", url: "/projects/epistatic-regularizer/", size: 11 },
+        { id: "ephaptic-regularizer", name: "ephaptic Regularizer", type: "project", url: "/projects/ephaptic-regularizer/", size: 11 },
         { id: "game-classification", name: "Game Classification", type: "project", url: "/projects/game-classification/", size: 11 },
         { id: "android-app", name: "Android App", type: "project", url: "/projects/android-app/", size: 11 },
         { id: "parking-management", name: "Parking Management", type: "project", url: "/projects/parking-management/", size: 11 },
@@ -116,11 +116,11 @@ const graphData = {
         { source: "deep-learning", target: "obstacle-detection" },
         { source: "pytorch", target: "obstacle-detection" },
 
-        // Epistatic Regularizer connections
-        { source: "python", target: "epistatic-regularizer" },
-        { source: "pytorch", target: "epistatic-regularizer" },
-        { source: "tensorflow", target: "epistatic-regularizer" },
-        { source: "deep-learning", target: "epistatic-regularizer" },
+        // ephaptic Regularizer connections
+        { source: "python", target: "ephaptic-regularizer" },
+        { source: "pytorch", target: "ephaptic-regularizer" },
+        { source: "tensorflow", target: "ephaptic-regularizer" },
+        { source: "deep-learning", target: "ephaptic-regularizer" },
 
         // Game Classification connections
         { source: "python", target: "game-classification" },

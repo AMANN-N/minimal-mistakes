@@ -1,9 +1,9 @@
 ---
 layout: portfolio-single
-title: "Epistatic Effect as Regularizer in ANNs"
-excerpt: "Explored biologically inspired epistatic regularization in neural networks to improve robustness and generalization."
+title: "ephaptic Effect as Regularizer in ANNs"
+excerpt: "Explored biologically inspired ephaptic regularization in neural networks to improve robustness and generalization."
 icon: "fas fa-brain"
-image: "/assets/img/portfolio/epistatic-cover.png"
+image: "/assets/img/portfolio/ephaptic-cover.png"
 github: "https://github.com/AMANN-N/Neural-Network-assignment"
 ---
 
@@ -24,7 +24,7 @@ github: "https://github.com/AMANN-N/Neural-Network-assignment"
 
 ## Overview
 
-This project investigates **epistatic effects inspired by biological neural systems** as a form of regularization in artificial neural networks.
+This project investigates **ephaptic effects inspired by biological neural systems** as a form of regularization in artificial neural networks.
 
 The core idea is to model interactions between neurons based on properties such as spatial distance, neuron size, and myelination, and use these interactions to influence activations during training.
 
@@ -33,7 +33,7 @@ The core idea is to model interactions between neurons based on properties such 
 ## Key Details
 
 - Implemented **custom regularization mechanisms** based on pairwise neuron interactions.
-- Modeled epistatic effects using distance-based, size-based, and myelin-inspired terms.
+- Modeled ephaptic effects using distance-based, size-based, and myelin-inspired terms.
 - Integrated the regularizer into CNN-based architectures.
 - Evaluated the approach on **CIFAR-10**, observing improvements in robustness and generalization compared to baseline models.
 - Leveraged GPU acceleration to support experimentation at scale.
