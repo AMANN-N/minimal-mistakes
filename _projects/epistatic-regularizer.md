@@ -3,7 +3,7 @@ layout: portfolio-single
 title: "ephaptic Effect as Regularizer in ANNs"
 excerpt: "Explored biologically inspired ephaptic regularization in neural networks to improve robustness and generalization."
 icon: "fas fa-brain"
-image: "/assets/img/portfolio/ephaptic-cover.png"
+image: "/assets/img/portfolio/dnn-cover.png"
 github: "https://github.com/AMANN-N/Neural-Network-assignment"
 ---
 

@@ -32,9 +32,9 @@ This project implements a **real-time adaptive learning and practice platform** 
 
 - Designed an **Adaptive Mastery Platform** that supports personalized learning paths.
 - Built **AI agents** (Curriculum Architect, Tutor, Generator, Evaluator) for automated content flow.
-- Integrated a **local JSON/Vector database** for storing learning content and user progress. :contentReference[oaicite:2]{index=2}
+- Integrated a **local JSON/Vector database** for storing learning content and user progress. :contentReference
 - Organized **micro-adaptive learning loops** to adjust difficulty and recommendations.
-- Prepared system for **LLM-enhanced content generation** and LLM-driven educational guidance. :contentReference[oaicite:3]{index=3}
+- Prepared system for **LLM-enhanced content generation** and LLM-driven educational guidance.
 
 ---
 
