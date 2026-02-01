@@ -25,6 +25,8 @@ github: ""
 
 ## Key Contributions
 
+* Developed a cross-platform cybersecurity agent that performs system health checks, monitors login and command activity, detects unauthorized processes, terminates threats, and generates real-time alerts.
+* Worked on automatic Code debugging agent which could identify bugs from system logs and create a PR with a fix with 0 human input even in complex repositories using OpenCode and ClaudCode.
 * Built and maintained relevance and classification pipelines used to match large volumes of documents and entities with high precision.
 * Designed automated model pipelines to reduce manual retraining, evaluation, and review overhead.
 * Implemented retrieval-augmented generation (RAG) systems for structured and unstructured enterprise data.
